@@ -32,6 +32,12 @@ import com.android.setupwizardlib.GlifPreferenceLayout;
 
 import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
+
+import com.android.internal.widget.LockPatternUtils;
+
+import com.android.internal.logging.MetricsProto.MetricsEvent;
+
+
 public class ChooseLockPatternSize extends PreferenceActivity {
 
     @Override
@@ -59,7 +65,9 @@ public class ChooseLockPatternSize extends PreferenceActivity {
                 throw new SecurityException("Fragment contained in wrong activity");
             }
             addPreferencesFromResource(R.xml.security_settings_pattern_size);
+
             setHeaderView(R.layout.choose_lock_pattern_size_header);
+
         }
 
         @Override
@@ -111,6 +119,7 @@ public class ChooseLockPatternSize extends PreferenceActivity {
         }
 
         @Override
+
         public void onViewCreated(View view, Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
             GlifPreferenceLayout layout = (GlifPreferenceLayout) view;
@@ -133,6 +142,8 @@ public class ChooseLockPatternSize extends PreferenceActivity {
         @Override
         protected int getMetricsCategory() {
             return CMMetricsLogger.CHOOSE_LOCK_PATTERN_SIZE;
+        protected int getMetricsCategory() {
+            return MetricsEvent.EXTENSIONS;
         }
     }
 }

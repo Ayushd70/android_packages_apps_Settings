@@ -407,10 +407,13 @@ public class ChooseLockPattern extends SettingsActivity {
                     LockPatternView.Cell.of(2, 1, mPatternSize)
                     ));
 
+
             final GlifLayout layout = (GlifLayout) inflater.inflate(
                     R.layout.choose_lock_pattern, container, false);
             layout.setHeaderText(getActivity().getTitle());
             return layout;
+
+            return inflater.inflate(R.layout.choose_lock_pattern, container, false);
         }
 
         @Override
