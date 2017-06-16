@@ -31,12 +31,21 @@
 
         <ListPreference
             android:key="status_bar_carrier_font_style"
+<<<<<<< HEAD
             android:entries="@array/status_bar_weather_font_style_entries"
             android:dialogTitle="@string/status_bar_carrier_font_style_title"
             android:entryValues="@array/status_bar_weather_font_style_values"
             android:title="@string/status_bar_carrier_font_style_title" />
 
         <com.android.settings.aim.Preferences.CustomSeekBarPreference
+=======
+            android:entries="@array/status_bar_font_style_entries"
+            android:dialogTitle="@string/status_bar_carrier_font_style_title"
+            android:entryValues="@array/status_bar_font_style_values"
+            android:title="@string/status_bar_carrier_font_style_title" />
+
+        <com.android.settings.SeekBarPreference
+>>>>>>> d8e9a7f91c70cc93cc944952466b898f36139b93
             android:key="status_bar_carrier_font_size"
             android:title="@string/status_bar_carrier_size"
             android:max="23"
