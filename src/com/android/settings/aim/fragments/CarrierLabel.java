@@ -52,11 +52,9 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-<<<<<<< HEAD
-import com.android.settings.aim.Preferences.CustomSeekBarPreference;
-=======
+
 import com.android.settings.SeekBarPreference;
->>>>>>> d8e9a7f91c70cc93cc944952466b898f36139b93
+
 
 import java.util.Date;
 import java.util.List;
