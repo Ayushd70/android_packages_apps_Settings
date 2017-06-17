@@ -45,7 +45,7 @@
         android:title="@string/lock_pattern_size_5"
         android:persistent="false"/>
     
-<PreferenceScreen
+    <com.android.settings.MultiLinePreference
         android:icon="@drawable/ic_security_pattern_6x6"
 
     <PreferenceScreen
